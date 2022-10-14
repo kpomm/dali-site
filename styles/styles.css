@@ -165,6 +165,10 @@ div#left-text {
 }
 
 img {
+	width: 30vw;
+	height: 30vw;
+	margin: 10vh;
+	padding: auto;
 }
 
 div#contact-me {
