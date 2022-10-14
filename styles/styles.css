@@ -62,6 +62,10 @@ nav {
 	width: 100vw;
 }
 
+nav.black > ul > li a {
+	color: black;
+}
+
 ul {
 	display: flex;
 	list-style: none;
@@ -91,25 +95,12 @@ nav a {
 	font-size: 1.5rem;
 	color: #fff;
 }
-nav a#black {
-	text-decoration: none;
-	font-family: "Rubik", sans-serif;
-	font-size: 1.5rem;
-	color: black;
-}
 
 li a {
 	text-decoration: none;
 	font-family: "Rubik", sans-serif;
 	font-size: 1.3rem;
 	color: #fff;
-}
-
-li a#black {
-	text-decoration: none;
-	font-family: "Rubik", sans-serif;
-	font-size: 1.3rem;
-	color: black;
 }
 
 a {
@@ -130,6 +121,10 @@ li a::after {
 	transition: opacity 300ms, transform 300ms;
 }
 
+nav.black > ul > li a::after {
+	background-color: black;
+}
+
 li a::after {
 	opacity: 1;
 	transform: scale(0);
@@ -143,6 +138,7 @@ li a:focus::after {
 
 div#landing {
 	width: 100vw;
+	height: 100vh;
 	padding-top: 30vh;
 	text-align: center;
 	justify-content: center;
@@ -155,6 +151,20 @@ div#grid {
 	left: 50%;
 	transform: translateX(-50%);
 	width: 70%;
+}
+
+div#about-me {
+	width: 100vw;
+	height: 70vh;
+	display: flex;
+}
+
+div#left-text {
+	width: 40vw;
+	margin: 10vh;
+}
+
+img {
 }
 
 div#contact-me {
